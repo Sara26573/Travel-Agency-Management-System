@@ -1,0 +1,132 @@
+
+.bg-white{
+	-fx-background-color : #fff;
+	-fx-effect : dropshadow(three-pass-box,rgba(0,0,0,.3),8,0,0,0);
+	-fx-background-radius : 8px;
+}
+
+.nav{
+	-fx-background-color:transparent;
+	-fx-text-fill:black;
+	-fx-cursor:hand;
+	-fx-font-size:14px;
+	-fx-font-weight:bold;
+}
+
+.nav:hover{
+	-fx-background-color: #D4F1F4;
+}
+
+.buttonOut{
+	-fx-background-color:#D4F1F4;
+}
+.buttonOut:hover{
+	-fx-background-color:#189AB4;
+}
+.table-view {
+    -fx-background-color: #f0f0f0;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to top left, #DDF8F8, #C6DFDF); 
+    -fx-text-fill:white;
+    -fx-alignment: center; 
+    -fx-padding: 5px 10px; 
+    -fx-border-radius: 5px 5px 0 0;
+    -fx-border-color: #1E90FF;
+    
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: #add8e6; 
+}
+
+.table-view .scroll-bar:vertical {
+    -fx-background-color: #DDF8F8;
+}
+
+.table-view .scroll-bar:horizontal {
+    -fx-background-color: #DDF8F8;
+}
+
+.table-view .column-header-background .filler, .table-view .column-header-background .column-header {
+    -fx-border-color: transparent;
+}
+
+.combo{
+	-fx-background-color:#DDF8F8;
+	-fx-border-width:2px;
+	-fx-border-color:#BFD7ED;
+	-fx-background-radius : 8px;
+	-fx-border-radius: 8px;
+}
+.scroll-pane {
+    -fx-background-color: white; 
+}
+
+
+.scroll-bar:vertical {
+    -fx-background-color: #dddddd; 
+}
+
+
+.scroll-bar:horizontal {
+    -fx-background-color: #dddddd;
+}
+
+.fixing{
+	-fx-background-color:white;
+	-fx-border-color:#BFD7ED;
+	-fx-border-width:2px;
+
+}
+
+.textfield{
+	-fx-border-width:2px;
+	-fx-border-color:#BFD7ED;
+	-fx-background-radius : 8px;
+	-fx-border-radius: 8px;
+}
+.bg-form{
+	-fx-background-color:linear-gradient(to top right,black,#191970);
+}
+.textfield2{
+	-fx-background-color:transparent;
+	-fx-text-inner-color:#fff;
+	-fx-border-color:#2E8BC0;
+	-fx-border-width:0px 0px .4px 0px;
+}
+.textfield2:focused{
+	-fx-border-color:#189AB4;
+	-fx-border-width:0px 0px 2px 0px;
+}
+.buttonCreateAccount{
+	-fx-background-color:transparent;
+}
+.buttonCreateAccount:hover{
+	-fx-border-color:#189AB4;
+	-fx-border-width:0px 0px 2px 0px;
+	
+}
+
+.buttonLogIn{
+	-fx-background-color: #0ba6ff;
+	-fx-cursor:hand;
+}
+.textfield3{
+	-fx-background-color:transparent;
+	-fx-text-inner-color:black;
+	-fx-border-color:#2E8BC0;
+	-fx-border-width:0px 0px .4px 0px;
+}
+.combo1{
+	-fx-background-color:#DDF8F8;
+	-fx-border-width:2px;
+	-fx-border-color:#BFD7ED;
+	-fx-background-radius : 8px;
+	-fx-border-radius: 8px;
+}
+.combo1:hover{
+	-fx-cursor:hand;
+}

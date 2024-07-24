@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="950.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RrethNesh">
+   <children>
+      <AnchorPane prefHeight="702.0" prefWidth="227.0">
+         <children>
+            <ImageView fitHeight="702.0" fitWidth="235.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WelcomeImage.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="103.0" fitWidth="96.0" layoutX="65.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@WelcomeLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="60.0" layoutY="217.0" prefHeight="26.0" prefWidth="105.0" text="   Welcome to">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="-1.0" layoutY="332.0" mnemonicParsing="false" onAction="#FaqeKryesore" prefHeight="38.0" prefWidth="228.0" styleClass="nav" stylesheets="@application.css" text="Faqe Kryesore" />
+            <Button layoutX="2.0" layoutY="370.0" mnemonicParsing="false" onAction="#PaketaSell" prefHeight="38.0" prefWidth="228.0" styleClass="nav" stylesheets="@application.css" text="Paketa Ekzistuese" />
+            <Button layoutY="408.0" mnemonicParsing="false" onAction="#ShtoPaketa1" prefHeight="38.0" prefWidth="228.0" styleClass="nav" stylesheets="@application.css" text="Shto Paketa" />
+            <Button layoutX="2.0" layoutY="446.0" mnemonicParsing="false" onAction="#ShtoKliente1" prefHeight="38.0" prefWidth="228.0" styleClass="nav" stylesheets="@application.css" text="Klienta" />
+            <Button layoutX="-1.0" layoutY="484.0" mnemonicParsing="false" onAction="#RrethNesh1" prefHeight="38.0" prefWidth="228.0" styleClass="nav" stylesheets="@application.css" text="Rreth Nesh" />
+            <Button layoutX="14.0" layoutY="647.0" mnemonicParsing="false" onAction="#SignOut" prefHeight="27.0" prefWidth="75.0" styleClass="buttonOut" stylesheets="@application.css" text="Sign Out">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="40.0" layoutY="243.0" prefHeight="20.0" prefWidth="176.0" text="   SaraTravel Agency">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="605.0" layoutY="34.0" prefHeight="634.0" prefWidth="320.0" styleClass="bg-white" stylesheets="@application.css">
+         <children>
+            <Label layoutX="93.0" layoutY="22.0" prefHeight="18.0" prefWidth="210.0" text="  ANONYMOUS FORM" textFill="#1f6581" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="56.0" prefHeight="18.0" prefWidth="301.0" text="Nese deshironi mund te plotesoni kete formular qe te" textFill="#1f6581" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="74.0" prefHeight="18.0" prefWidth="290.0" text="marrim parasysh keshillat tuaja ne lidhje me agjensine " textFill="#1f6581" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="92.0" prefHeight="18.0" prefWidth="290.0" text="tone per te ofruar nje sherbim sa me te pelqyeshem." textFill="#1f6581" />
+            <Label layoutX="14.0" layoutY="120.0" prefHeight="18.0" prefWidth="238.0" text=" Cilin qytet Europian do donit te vizitioni?" textFill="#1f6581" />
+            <TextField fx:id="QytetEuropian" layoutX="15.0" layoutY="139.0" prefHeight="30.0" prefWidth="215.0" styleClass="textfield" stylesheets="@application.css" />
+            <Label layoutX="14.0" layoutY="183.0" prefHeight="18.0" prefWidth="238.0" text=" Cili qytet Shqiptar ju le me shume mbresa?" textFill="#1f6581" />
+            <TextField fx:id="QytetShqiptar" layoutX="15.0" layoutY="201.0" prefHeight="6.0" prefWidth="215.0" styleClass="textfield" stylesheets="@application.css" />
+            <Label layoutX="14.0" layoutY="247.0" prefHeight="18.0" prefWidth="265.0" text=" A keni udhetuar ndonjehere me SaraTravel?" textFill="#1f6581" />
+            <Label layoutX="14.0" layoutY="308.0" prefHeight="18.0" prefWidth="238.0" text=" Nese po cilin destinacion keni zgjedhur?" textFill="#1f6581" />
+            <TextField fx:id="Destinacion" layoutX="15.0" layoutY="326.0" prefHeight="30.0" prefWidth="215.0" styleClass="textfield" stylesheets="@application.css" />
+            <Label layoutX="19.0" layoutY="381.0" prefHeight="18.0" prefWidth="215.0" text="Sa ju ka pelqyer sherbimi i guides?" textFill="#1f6581" />
+            <RadioButton fx:id="SherbimPak" layoutX="83.0" layoutY="403.0" mnemonicParsing="false" text="pak" />
+            <RadioButton fx:id="SherbimMjaftueshem" layoutX="127.0" layoutY="403.0" mnemonicParsing="false" text="mjaftushem" />
+            <RadioButton fx:id="SherbimShume" layoutX="212.0" layoutY="403.0" mnemonicParsing="false" text="shume" />
+            <TextArea fx:id="Komente" layoutX="20.0" layoutY="444.0" prefHeight="108.0" prefWidth="290.0" promptText="Komente te metejshme..." styleClass="textfield" stylesheets="@application.css" />
+            <RadioButton fx:id="FrekuentimPo" layoutX="25.0" layoutY="268.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="36.0" text="po" />
+            <RadioButton fx:id="FrekuentimJo" layoutX="71.0" layoutY="270.0" mnemonicParsing="false" text="jo" />
+            <Button layoutX="129.0" layoutY="573.0" mnemonicParsing="false" onAction="#Regjistro" styleClass="combo" stylesheets="@application.css" text="Dorezo" />
+            <RadioButton fx:id="aspak" layoutX="25.0" layoutY="403.0" mnemonicParsing="false" text="aspak" />
+            <Label fx:id="label1" layoutX="18.0" layoutY="169.0" prefHeight="18.0" prefWidth="302.0" textFill="RED" />
+            <Label fx:id="label2" layoutX="18.0" layoutY="231.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
+            <Label fx:id="label3" layoutX="19.0" layoutY="288.0" prefHeight="18.0" prefWidth="290.0" textFill="RED" />
+            <Label fx:id="label4" layoutX="18.0" layoutY="349.0" prefHeight="30.0" prefWidth="266.0" textFill="RED" />
+            <Label fx:id="label5" layoutX="18.0" layoutY="421.0" prefHeight="18.0" prefWidth="266.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="223.0" fitWidth="453.0" layoutX="247.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WaboutUS.png" />
+         </image>
+      </ImageView>
+      <Text fill="#0a4a5b" layoutX="263.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textfill1" text="SaraTravel është një agjensi turistike e specializuar në ofrimin e eksperiencave të udhëtimit të paharrueshme për udhëtarët e tyre. E themeluar në vitin 2010 me qendër në qytetin e bukur të Shkodres në, SaraTravel ka shënuar një rrugëtim të qëndrueshëm drejt arritjes së standardit të lartë të shërbimit dhe kënaqësisë së klientëve." wrappingWidth="302.39999999999986">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#0a4a5b" layoutX="264.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Përkushtimi ynë ndaj kujdesit të detajuar dhe pasionit për udhëtimet na ka bërë të njohur si udhëheqës në tregun e agjencive turistike në rajon. Përfaqësuesit tanë të përvojësuar janë të përkushtuar për të siguruar që çdo udhëtim të jetë i përsosur në çdo aspekt, duke filluar nga zgjedhja e destinacionit deri te detajet e vogla gjatë udhëtimit." wrappingWidth="301.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#0a4a5b" layoutX="263.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Në SaraTravel, ofrojmë një gamë të gjerë të shërbimeve turistike, duke përfshirë udhetime aventure,udhetime ne grup,nje guide e cila ofron nje njohje me te thelle e zones lokale." wrappingWidth="272.7999725341797" />
+      <Label layoutX="263.0" layoutY="34.0" style="-fx-font-family: serif;" text="SaraTravel ~ Rreth Nesh" textFill="#0a4a5b">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="436.0" prefHeight="18.0" prefWidth="138.0" text="Adresa jone e qendres:" textFill="#a009b4" />
+      <Label layoutX="263.0" layoutY="455.0" prefHeight="18.0" prefWidth="122.0" text="SaraTravel" textFill="#a009b4" />
+      <Label layoutX="264.0" layoutY="473.0" prefHeight="18.0" prefWidth="145.0" text="Rruga Kole Idromeno,Nr 12" textFill="#a009b4" />
+      <Label layoutX="264.0" layoutY="491.0" prefHeight="18.0" prefWidth="146.0" text="Shkoder ,Shqiperi" textFill="#a009b4" />
+   </children>
+</AnchorPane>
